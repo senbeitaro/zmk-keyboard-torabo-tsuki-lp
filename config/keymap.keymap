@@ -12,6 +12,75 @@
             bindings = <&bt BT_CLR>;
             key-positions = <28 29>;
         };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <13 14>;
+        };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <13 14 15>;
+        };
+
+        del {
+            bindings = <&kp DEL>;
+            key-positions = <21 22>;
+        };
+
+        mouseL {
+            bindings = <&mkp LCLK>;
+            key-positions = <33 34>;
+        };
+
+        mouseR {
+            bindings = <&mkp RCLK>;
+            key-positions = <34 35>;
+        };
+
+        mouseM {
+            bindings = <&mkp MCLK>;
+            key-positions = <33 35>;
+        };
+
+        back {
+            bindings = <&mkp MB4>;
+            key-positions = <18 19>;
+        };
+
+        forward {
+            bindings = <&mkp MB5>;
+            key-positions = <32 33>;
+        };
+
+        curveL {
+            bindings = <&kp LS(NUMBER_8)>;
+            key-positions = <17 29>;
+        };
+
+        curveR {
+            bindings = <&kp LS(NUMBER_9)>;
+            key-positions = <18 32>;
+        };
+
+        dclick {
+            bindings = <&dclick>;
+            key-positions = <33 34 35>;
+        };
+
+        dclick2 {
+            bindings = <&dclick>;
+            key-positions = <33 19>;
+        };
+    };
+
+    macros {
+        dclick: dclick {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp LCLK &mkp LCLK>;
+            label = "DCLICK";
+        };
     };
 
     keymap {
