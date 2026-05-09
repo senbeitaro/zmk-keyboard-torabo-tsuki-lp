@@ -2,7 +2,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -30,11 +29,11 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans     &trans     &trans                  &trans  &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans                  &trans  &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &mkp RCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans
+&trans  &trans                &trans                  &trans                  &trans        &trans                                            &trans         &trans    &trans         &trans     &trans                   &trans
+&trans  &kp NUMBER_1          &kp NUMBER_2            &kp NUMBER_3            &kp NUMBER_4  &kp N5                                            &kp PAGE_UP    &kp HOME  &kp UP         &kp END    &kp LEFT_BRACKET         &trans
+&trans  &kp NUMBER_6          &kp NUMBER_7            &kp NUMBER_8            &kp NUMBER_9  &kp NUMBER_0  &trans            &trans            &kp PAGE_DOWN  &kp LEFT  &kp DOWN       &kp RIGHT  &kp LS(INTERNATIONAL_1)  &trans
+&trans  &mt LEFT_SHIFT MINUS  &mt LEFT_CONTROL EQUAL  &mt LEFT_ALT LS(EQUAL)  &none         &none         &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &none          &none     &kp SEMICOLON  &kp SQT    &kp INTERNATIONAL_1      &trans
+&trans  &trans                &trans                  &trans                  &trans        &trans        &trans            &trans            &trans         &trans    &trans         &trans     &kp LS(INTERNATIONAL_3)  &trans
             >;
         };
 
