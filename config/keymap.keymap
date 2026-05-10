@@ -67,6 +67,16 @@
             bindings = <&dclick>;
             key-positions = <33 19>;
         };
+
+        bracketL {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <29 43>;
+        };
+
+        bracketR {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <32 46>;
+        };
     };
 
     macros {
